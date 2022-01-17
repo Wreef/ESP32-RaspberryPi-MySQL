@@ -1,2 +1,3 @@
-# ESP32-RaspberryPi-MySQL
-Guia para criar um banco de dados com Raspberry PI e ESP32
+![logo](https://i.ibb.co/YthtbLh/Giifff-mid.gif)
+***
+# Banco de Dados: Raspberry Pi e ESP32
