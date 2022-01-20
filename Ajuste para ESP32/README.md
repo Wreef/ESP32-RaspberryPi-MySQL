@@ -1,4 +1,4 @@
 ![logo](https://i.ibb.co/YthtbLh/Giifff-mid.gif)
 ***
-# Ajuste: Acesso remoto 
+# Ajuste: Acesso remoto (desenvolvendo)
 Neste guia, iremos ajustar o banco de dados MySQL no Raspberry Pi para receber dados com acesso remoto.
