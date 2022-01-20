@@ -89,4 +89,20 @@ Acesse o IP em seu navegador mais uma vez.
   <img src="https://i.ibb.co/Q8YgdmS/mysql5.png" alt="5"/>
 </p>
 
+Remova o arquivo "index.php":
 
+```cmd
+sudo rm index.php
+```
+
+Instalando Mariadb:
+
+```cmd
+sudo apt install mariadb-server php-mysql -y
+```
+
+Dê um restart no apache2:
+
+```cmd
+sudo service apache2 restart
+```
