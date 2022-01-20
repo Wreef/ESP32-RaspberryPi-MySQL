@@ -62,16 +62,16 @@ Você verá a seguinte página:
 
 Instalação do PHP:
 
-```cmd
+```CMD
 sudo apt install php -y
 ```
 
 Removendo o arquivo "index.html":
 
-```cmd
+```CMD
 sudo rm index.html
 ```
-```cmd
+```CMD
 sudo nano index.php
 ```
 
@@ -83,7 +83,7 @@ Escreva alguma mensagem para aparecer na página, aperte CTRL + X, aperte Y e po
 
 Dê um restart no apache2:
 
-```cmd
+```CMD
 sudo service apache2 restart
 ```
 
@@ -95,18 +95,103 @@ Acesse o IP em seu navegador mais uma vez.
 
 Remova o arquivo "index.php":
 
-```cmd
+```CMD
 sudo rm index.php
 ```
 
 Instalando Mariadb:
 
-```cmd
+```CMD
 sudo apt install mariadb-server php-mysql -y
 ```
 
 Dê um restart no apache2:
 
-```cmd
+```CMD
 sudo service apache2 restart
 ```
+
+Configurando mariadb:
+
+```CMD
+sudo mysql_secure_installation
+```
+
+Insira a sua senha para o usuário root, aperte ENTER.
+
+Aperte Y e ENTER para definir a senha do usuário root. Digite a nova senha e aperte ENTER.
+
+Aperte Y para remover usuários anônimos.
+ 
+Aperte Y para desabilitar acesso remoto do root.
+
+Aperte Y para remover o teste.
+
+Aperte Y para recarregar os privilégios.
+
+Instalando o phpMyAdmin:
+
+```CMD
+sudo apt install phpmyadmin -y
+```
+
+Nas configurações escolha "dbconfig-common".
+
+Selecione Apache2 e aperte ENTER.
+
+Em configurações do phpmyadmin selecione "OK".
+
+Em configurações do phpmyadmin com  dbconfig-common selecione "Yes".
+
+Digite sua senha e selecione "OK".
+
+Habilite o PHP MySQLi:
+
+```CMD
+sudo phpenmod mysqli
+```
+
+Dê um restart no apache2:
+
+```CMD
+sudo service apache2 restart
+```
+
+Agora tente acessar (com seu IP) "http://192.168.0.104/phpmyadmin".
+
+<p align="center">
+  <img src="https://i.ibb.co/FXTwjtY/mysql6.png" alt="5"/>
+</p>
+
+Para corrigir esse erro mova a pasta "phpmyadmin".
+
+```CMD
+sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+```
+
+Agora tente acessar novamente (com seu IP) "http://192.168.0.104/phpmyadmin".
+
+<p align="center">
+  <img src="https://i.ibb.co/SRvY8BH/mysql67png.png" alt="5"/>
+</p>
+
+Acesse com o usuário "root" e a senha que você criou anteriormente.
+
+<p align="center">
+  <img src="https://i.ibb.co/LgyLkWn/mysql61.png" alt="5"/>
+</p>
+
+Pronto! Você criou seu banco de dados.
+
+Somente um último ajuste. Use os seguintes códigos no CMD:
+
+```CMD
+ls -lh /var/www/
+sudo chown -R pi:www-data /var/www/html/
+sudo chmod -R 770 /var/www/html/
+```
+
+## Conclusão
+Com seu banco de dados criado é possível desenvolver projetos de datalogger.
+
+# Até mais!
