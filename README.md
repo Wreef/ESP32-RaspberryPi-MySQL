@@ -7,6 +7,10 @@ Neste guia, iremos criar um banco de dados MySQL no Raspberry Pi.
 
 Acesse o promt de comando (CMD):
 
+<p align="center">
+  <img src="https://i.ibb.co/0Z8btp1/mysql1.png" alt="5"/>
+</p>
+
 Atualize a Raspberry Pi:
 
 ```CMD
