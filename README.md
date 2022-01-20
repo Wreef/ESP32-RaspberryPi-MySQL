@@ -117,18 +117,17 @@ Configurando mariadb:
 sudo mysql_secure_installation
 ```
 
-Insira a sua senha para o usuário root, aperte ENTER.
+> Insira a sua senha para o usuário root, aperte ENTER.
 
-Aperte Y e ENTER para definir a senha do usuário root. Digite a nova senha e aperte ENTER.
+> Aperte Y e ENTER para definir a senha do usuário root. Digite a nova senha e aperte ENTER.
 
-Aperte Y para remover usuários anônimos.
+> Aperte Y para remover usuários anônimos.
  
-Aperte Y para desabilitar acesso remoto do root.
+> Aperte Y para desabilitar acesso remoto do root.
 
-Aperte Y para remover o teste.
+> Aperte Y para remover o teste.
 
-Aperte Y para recarregar os privilégios.
-
+> Aperte Y para recarregar os privilégios.
 
 Instalando o phpMyAdmin:
 
@@ -136,16 +135,15 @@ Instalando o phpMyAdmin:
 sudo apt install phpmyadmin -y
 ```
 
-Nas configurações escolha "dbconfig-common".
+> Nas configurações escolha "dbconfig-common".
 
-Selecione Apache2 e aperte ENTER.
+> Selecione Apache2 e aperte ENTER.
 
-Em configurações do phpmyadmin selecione "OK".
+> Em configurações do phpmyadmin selecione "OK".
 
-Em configurações do phpmyadmin com  dbconfig-common selecione "Yes".
+> Em configurações do phpmyadmin com  dbconfig-common selecione "Yes".
 
-Digite sua senha e selecione "OK".
-
+> Digite sua senha e selecione "OK".
 
 Habilite o PHP MySQLi:
 
