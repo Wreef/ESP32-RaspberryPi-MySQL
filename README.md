@@ -129,6 +129,7 @@ Aperte Y para remover o teste.
 
 Aperte Y para recarregar os privilégios.
 
+
 Instalando o phpMyAdmin:
 
 ```CMD
@@ -144,6 +145,7 @@ Em configurações do phpmyadmin selecione "OK".
 Em configurações do phpmyadmin com  dbconfig-common selecione "Yes".
 
 Digite sua senha e selecione "OK".
+
 
 Habilite o PHP MySQLi:
 
